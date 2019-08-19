@@ -1,0 +1,102 @@
+ul{
+    color:red;
+}
+.black {
+    color:black;
+}
+#ik {
+    color:salmon;
+ }
+.font{
+    font-family: "Courier New", Courier, monospace;
+}
+ #position{
+    position: relative; 
+    left: 200px; 
+    border: 2px solid salmon;
+    float: left;
+    margin: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+.padding-margin{
+    padding: 20px 50px 20px 50px; 
+    margin: auto;
+    border: 2px solid salmon;
+    clear: left;
+    width: 505px;
+    border-radius: 90px 15px;
+}
+#real{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: blanchedalmond;
+    padding-left: 40%;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+}
+a:link{
+    color: lightpink;
+}
+a:visited{
+    color: gray;
+}
+a:hover{
+    color: rgb(154, 28, 212);
+    background: rgb(240, 217, 247);
+}
+a:active{
+    color: rgb(0, 0, 0);
+}
+#shadow{
+    text-shadow: 4px 4px rgba(255, 182, 193, 0.562);
+}
+@keyframes animacao-box{
+    from{background: orangered; border-radius: 0px; top: 0; left: 0;}
+    to{background: yellow; border-radius: 150px; top: 200px; left: 200px;}
+}
+@keyframes animacao-box2{
+    from{background: grey; border-radius: 0px; top: 0; right: 0;}
+    to{background: black; border-radius: 150px; top: 200px; right: 200px;}
+}
+
+#box-animacao{
+    margin: 50px;
+    margin-top: 0;
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: relative;
+    animation-name: animacao-box;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+}
+#box-animacao2{
+    margin: 50px;
+    margin-top: 0;
+    width: 150px;
+    height: 150px;
+    background: red;
+    position: relative;
+    animation-name: animacao-box2;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+}
+
+.marcador{
+    background: #fe9d9d;
+    border: 1px solid #f94646;
+}
+.marcador2{
+    background: #5bf946;
+    border: 1px solid #36ae26;
+}
