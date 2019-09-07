@@ -10,52 +10,64 @@ ul{
 .font{
     font-family: "Courier New", Courier, monospace;
 }
- #position{
-    position: relative; 
-    left: 200px; 
-    border: 2px solid salmon;
-    float: left;
-    margin: 5px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-}
-.padding-margin{
-    padding: 20px 50px 20px 50px; 
-    margin: auto;
-    border: 2px solid salmon;
-    clear: left;
-    width: 505px;
-    border-radius: 90px 15px;
-}
+
 #real{
-    position: fixed;
+    position: fixed; /* Deixa a div fixada no topo */ 
     top: 0;
     left: 0;
     width: 100%;
     background: blanchedalmond;
-    padding-left: 40%;
+    padding-left: 40%; /* Deixa o texto dentro da div mais para da direita */ 
+} 
+
+#shadow{
+    text-shadow: 4px 4px rgba(255, 182, 193, 0.562);
 }
+
+#position{
+    position: relative; /* Deixa a posição relativa à posição normal */ 
+    left: 200px; /* É o que deixa a div mais pra direita */ 
+    border: 2px solid salmon;
+    float: left; /* Faz a parte da borda direita da div descolar do canto direito da tela */ 
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.padding-margin{
+    padding: 20px 50px 20px 50px; /* Pra margem ficar longe da imagem */ 
+    margin: auto; /* Deixa a div no meio da página */
+    border: 2px solid salmon;
+    clear: left; /* Não vai colidir com o float */
+    width: 505px;
+    border-radius: 90px 15px; /* Estiliza os cantos da borda */
+}
+
+
 a{
-    text-decoration: none;
+    text-decoration: none; /* Remove "decorações" do link */ 
     padding: 5px;
 }
 a:link{
-    color: lightpink;
+    color: lightpink; /* Cor inicial do link */ 
 }
 a:visited{
-    color: gray;
+    color: gray; /* Cor do link após ser visitado */ 
 }
+
+/* Hover é quando passa o mouse em cima do link */ 
 a:hover{
     color: rgb(154, 28, 212);
     background: rgb(240, 217, 247);
 }
+
+/* Active é o momento em que se clica no link */ 
 a:active{
     color: rgb(0, 0, 0);
 }
-#shadow{
-    text-shadow: 4px 4px rgba(255, 182, 193, 0.562);
-}
+
+
+/* ------------------------------------ Controle da animação  ------------------------------------- */
+
 @keyframes animacao-box{
     from{background: orangered; border-radius: 0px; top: 0; left: 0;}
     to{background: yellow; border-radius: 150px; top: 200px; left: 200px;}
@@ -64,6 +76,8 @@ a:active{
     from{background: grey; border-radius: 0px; top: 0; right: 0;}
     to{background: black; border-radius: 150px; top: 200px; right: 200px;}
 }
+
+/* -------------------------- Design inicial e configurações da animação ------------------------------ */
 
 #box-animacao{
     margin: 50px;
@@ -91,6 +105,8 @@ a:active{
     animation-iteration-count: 10;
     animation-direction: alternate;
 }
+
+/* --------------------- Background para entender o funcionamento da tabela de razões ----------------------- */
 
 .marcador{
     background: #fe9d9d;
