@@ -11,6 +11,10 @@ ul{
     font-family: "Courier New", Courier, monospace;
 }
 
+body{
+    background-color: #5bf946;
+}
+
 #real{
     position: fixed; /* Deixa a div fixada no topo */ 
     top: 0;
